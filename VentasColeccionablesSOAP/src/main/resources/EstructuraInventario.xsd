@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://com.Inventario" targetNamespace="http://com.Inventario" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!-- Estructura tabla Inventarios -->
+	<xs:element name="Inventarios">
+		<xs:complexType>
+			<xs:sequence>
+				<!-- Estructura Atributo idInventario -->
+				<xs:element name="idInventario">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<!-- Estructura Atributo FechaIngreso -->
+				<xs:element name="FechaIngreso" type="xs:date"/>
+				<!-- Estructura Atributo Descripción -->
+				<xs:element name="Descripción">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="255"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<!-- Estructura Atributo Modelos -->
+				<xs:element name="Modelos" type="xs:string"/>
+				<!-- Estructura Atributo CantidadProducto -->
+				<xs:element name="CantidadProducto">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://com.Descuentos" targetNamespace="http://com.Descuentos" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!-- Estructura tabla Descuentos -->
+	<xs:element name="Descuentos">
+		<xs:complexType>
+			<xs:sequence>
+				<!-- Estructura Atributo idDescuentos -->
+				<xs:element name="idDescuentos">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<!-- Estructura Atributo Descripcion -->
+				<xs:element name="Descripcion">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="45"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<!-- Estructura Atributo Porcentaje -->
+				<xs:element name="Porcentaje">
+					<xs:simpleType>
+						<xs:restriction base="xs:decimal">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="100"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<!-- Estructura Atributo FechaInicio -->
+				<xs:element name="FechaInicio" type="xs:date"/>
+				<!-- Estructura Atributo FechaFin -->
+				<xs:element name="FechaFin" type="xs:date"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

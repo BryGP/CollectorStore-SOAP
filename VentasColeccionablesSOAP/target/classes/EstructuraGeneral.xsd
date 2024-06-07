@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!-- Estructura tabla Pedidos -->
+	<xs:element name="Pedidos">
+		<xs:complexType>
+			<xs:sequence>
+				<!-- Estructura Atributo idPedido -->
+				<xs:element name="idPedidos">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<!-- Estructura Atributo Descripcion -->
+				<xs:element name="Descripcion">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="45"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<!-- Estructura Atributo Cantidad -->
+				<xs:element name="Cantidad">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="1"/>
+							<!-- Opcional -->
+							<xs:maxInclusive value="50"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<!-- Estructura Atributo FechaInicio -->
+				<xs:element name="FechaInicio" type="xs:date"/>
+				<!-- Estructura Atributo FechaCompra -->
+				<xs:element name="FechaCompra" type="xs:date"/>
+				<!-- Estructura Atributo FechaEntrega -->
+				<xs:element name="FechaEntrega" type="xs:date"/>
+				<!-- Estructura Atributo CostoTotal -->
+				<xs:element name="CostoTotal">
+					<xs:simpleType>
+						<xs:restriction base="xs:decimal">
+							<xs:minInclusive value="0.0"/>							
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<!-- Estructura Atributo EstadoProducto -->
+				<xs:element name="EstadoProducto">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Pendiente"/>
+							<xs:enumeration value="En proceso"/>
+							<xs:enumeration value="Entregado"/>
+							<xs:enumeration value="Cancelado"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<!-- Estructura Atributo Descuentos -->
+				<xs:element name="Descuentos" type="xs:int"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<!-- Estructura tabla Descuentos -->
+	<xs:element name="Descuentos">
+		<xs:complexType>
+			<xs:sequence>
+				<!-- Estructura Atributo idDescuentos -->
+				<xs:element name="idDescuentos">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<!-- Estructura Atributo Descripcion -->
+				<xs:element name="Descripcion">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="45"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<!-- Estructura Atributo Porcentaje -->
+				<xs:element name="Porcentaje">
+					<xs:simpleType>
+						<xs:restriction base="xs:decimal">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="100"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<!-- Estructura Atributo FechaInicio -->
+				<xs:element name="FechaInicio" type="xs:date"/>
+				<!-- Estructura Atributo FechaFin -->
+				<xs:element name="FechaFin" type="xs:date"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<!-- Estructura tabla Clientes -->
+	<xs:element name="Clientes">
+		<xs:complexType>
+			<xs:sequence>
+				<!-- Estructura Atributo idCliente -->
+				<xs:element name="idCliente">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+						<xs:minExclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				
+				<!-- Estructura Atributo Nombre -->
+				<xs:element name="Nombre">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="60"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				
+				<!-- Estructura Atributo Prefijo -->			
+				<xs:element name="Prefijo">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:pattern value="\+\d{1,3}"/>
+							<xs:maxExclusive value="3"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				
+				<!-- Estructura Atributo Telefono -->
+				<xs:element name="Telefono">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:maxExclusive value="10"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				
+				<!-- Estructura RFC -->
+				<xs:element name="RFC">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:length value="13"/>
+							<xs:pattern value="[A-Z]{4}[0-9]{6}[A-Z0-9]{3}"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				
+				<!-- Estructura RazonSocial -->
+				<xs:element name="RazonSocial">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="10"/>
+							<xs:maxLength value="100"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				
+				<!-- Estructura Atributo idPedido -->
+				<xs:element name="idPedidos">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minExclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+				
+	<!-- Estructura tabla Facturas -->
+	<xs:element name="Facturas">
+		<xs:complexType>
+			<xs:sequence>
+				<!-- Estructura Atributo idFactura -->
+				<xs:element name="idFacturas">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minExclusive value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				
+				<!-- Estructura Atributo Fecha -->
+				<xs:element name="Fecha">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="15"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				
+				<!-- Estructura Atributo CostoTotal -->
+				<xs:element name="CostoTotal">
+					<xs:simpleType>
+						<xs:restriction base="xs:decimal">
+							<xs:minExclusive value="0.01"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+	
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

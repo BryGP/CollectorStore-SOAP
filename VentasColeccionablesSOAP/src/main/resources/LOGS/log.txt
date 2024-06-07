@@ -1,0 +1,90 @@
+Apr 12, 2024 7:02:11 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+INFO: Objeto agregado de manera correcta 3
+Apr 12, 2024 7:02:20 PM com.itq.VentasColeccionables.CollecionablesEndpoint eliminarProducto
+INFO: Se ha eliminado exitosamente el producto con ID: 2
+Apr 12, 2024 7:03:04 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+INFO: Objeto agregado de manera correcta 4
+Apr 12, 2024 7:05:26 PM com.itq.VentasColeccionables.CollecionablesEndpoint eliminarProducto
+INFO: Se ha eliminado exitosamente el producto con ID: 4
+Apr 12, 2024 7:54:52 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+INFO: Objeto agregado de manera correcta 5
+Apr 12, 2024 7:56:36 PM com.itq.VentasColeccionables.CollecionablesEndpoint VentaCliente
+WARNING: Error al obtener el producto con ID: 5. Ocurrió la siguiente excepción: El ID del producto no existe, verifica la información
+Apr 12, 2024 7:57:35 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+INFO: Objeto agregado de manera correcta 5
+Apr 12, 2024 7:58:28 PM com.itq.VentasColeccionables.CollecionablesEndpoint modificarProducto
+INFO: Producto modificado exitosamente: 5
+Apr 12, 2024 7:59:45 PM com.itq.VentasColeccionables.CollecionablesEndpoint eliminarProducto
+INFO: Se ha eliminado exitosamente el producto con ID: 5
+Apr 12, 2024 7:59:52 PM com.itq.VentasColeccionables.CollecionablesEndpoint VentaCliente
+WARNING: Error al obtener el producto con ID: 5. Ocurrió la siguiente excepción: El ID del producto no existe, verifica la información
+Apr 12, 2024 8:01:46 PM com.itq.VentasColeccionables.CollecionablesEndpoint VentaCliente
+WARNING: Error al obtener el producto con ID: 5. Ocurrió la siguiente excepcion: El ID del producto no existe, verifica la información
+Apr 12, 2024 8:02:15 PM com.itq.VentasColeccionables.CollecionablesEndpoint VentaCliente
+WARNING: Error al obtener el producto con ID: 5. Ocurrió la siguiente excepcion: El ID del producto no existe, verifica la información
+Apr 12, 2024 8:02:21 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+INFO: Objeto agregado de manera correcta 5
+Apr 12, 2024 8:02:33 PM com.itq.VentasColeccionables.CollecionablesEndpoint modificarProducto
+INFO: Producto modificado exitosamente: 5
+Apr 12, 2024 8:04:05 PM com.itq.VentasColeccionables.CollecionablesEndpoint VentaCliente
+WARNING: Error al obtener el producto con ID: 5. Ocurrió la siguiente excepcion: El ID del producto no existe, verifica la información
+Apr 12, 2024 8:04:28 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+INFO: Objeto agregado de manera correcta 5
+Apr 12, 2024 8:05:10 PM com.itq.VentasColeccionables.CollecionablesEndpoint modificarProducto
+WARNING: Error al modificar el producto. Ocurrió la siguiente excepción: El ID del producto no existe
+Apr 12, 2024 8:05:16 PM com.itq.VentasColeccionables.CollecionablesEndpoint modificarProducto
+INFO: Producto modificado exitosamente: 5
+Apr 12, 2024 8:05:32 PM com.itq.VentasColeccionables.CollecionablesEndpoint eliminarProducto
+INFO: Se ha eliminado exitosamente el producto con ID: 5
+Apr 12, 2024 8:07:07 PM com.itq.VentasColeccionables.CollecionablesEndpoint VentaCliente
+WARNING: Error al obtener el producto con ID: 5. Ocurrió la siguiente excepcion: El ID del producto no existe, verifica la información
+Apr 12, 2024 8:07:13 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+INFO: Objeto agregado de manera correcta 5
+Apr 12, 2024 8:07:16 PM com.itq.VentasColeccionables.CollecionablesEndpoint VentaCliente
+INFO: Se obtuvo informacion del siguiente producto: 5
+Apr 12, 2024 8:55:17 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+INFO: Objeto agregado de manera correcta 5
+Apr 12, 2024 8:55:39 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+INFO: Objeto agregado de manera correcta 2
+Apr 12, 2024 8:55:56 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+INFO: Objeto agregado de manera correcta 3
+Apr 12, 2024 8:56:21 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+WARNING: Error al crear el producto. Ocurrio la siguiente excepcion: El número de serie del producto debe ser mayor que cero
+Apr 12, 2024 8:56:32 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+INFO: Objeto agregado de manera correcta 6
+Apr 12, 2024 8:58:13 PM com.itq.VentasColeccionables.CollecionablesEndpoint VentaCliente
+INFO: Se obtuvo informacion del siguiente producto: 1
+Apr 12, 2024 8:58:19 PM com.itq.VentasColeccionables.CollecionablesEndpoint VentaCliente
+INFO: Se obtuvo informacion del siguiente producto: 2
+Apr 12, 2024 8:58:24 PM com.itq.VentasColeccionables.CollecionablesEndpoint VentaCliente
+INFO: Se obtuvo informacion del siguiente producto: 3
+Apr 12, 2024 8:58:28 PM com.itq.VentasColeccionables.CollecionablesEndpoint VentaCliente
+WARNING: Error al obtener el producto con ID: 4. Ocurrio la siguiente excepcion: El ID del producto no existe, verifica la información
+Apr 12, 2024 8:58:33 PM com.itq.VentasColeccionables.CollecionablesEndpoint VentaCliente
+INFO: Se obtuvo informacion del siguiente producto: 6
+Apr 12, 2024 9:02:40 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+INFO: Objeto agregado de manera correcta 6
+Apr 12, 2024 9:02:45 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+INFO: Objeto agregado de manera correcta 2
+Apr 12, 2024 9:02:53 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+INFO: Objeto agregado de manera correcta 3
+Apr 12, 2024 9:03:05 PM com.itq.VentasColeccionables.CollecionablesEndpoint obtenerTodosLosProductos
+INFO: Se obtuvo información de todos los productos.
+Apr 14, 2024 3:56:28 PM com.itq.VentasColeccionables.CollecionablesEndpoint obtenerTodosLosProductos
+INFO: Se obtuvo información de todos los productos.
+Apr 14, 2024 4:17:06 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+INFO: Objeto agregado de manera correcta 2
+Apr 14, 2024 4:23:06 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+WARNING: Error al crear el producto. Ocurrio la siguiente excepcion: El número de serie del producto no puede estar vacío o ser nulo
+Apr 14, 2024 4:23:36 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+WARNING: Error al crear el producto. Ocurrio la siguiente excepcion: El precio del producto debe ser mayor que cero
+Apr 14, 2024 4:24:01 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+INFO: Objeto agregado de manera correcta 2
+Apr 14, 2024 4:24:11 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+WARNING: Error al crear el producto. Ocurrio la siguiente excepcion: El campo name del producto no puede comenzar con '?'
+Apr 14, 2024 4:28:17 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+WARNING: Error al crear el producto. Ocurrio la siguiente excepcion: El ID del producto debe ser mayor que cero
+Apr 14, 2024 4:28:24 PM com.itq.VentasColeccionables.CollecionablesEndpoint crearProducto
+INFO: Objeto agregado de manera correcta 50
+Apr 14, 2024 4:28:32 PM com.itq.VentasColeccionables.CollecionablesEndpoint obtenerTodosLosProductos
+INFO: Se obtuvo informacion de todos los productos.
